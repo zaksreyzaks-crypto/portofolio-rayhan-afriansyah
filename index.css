@@ -1,0 +1,49 @@
+/* ==========================================
+   PORTFOLIO CUSTOM STYLE - RAYHAN AFRIANSYAH
+   ========================================== */
+
+/* 1. Pengaturan Dasar & Kelancaran Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* 2. Kustomisasi Scrollbar (Agar Terlihat Modern di Browser) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 20px;
+    border: 2px solid #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
+
+/* 3. Perbaikan Gambar (Memastikan Foto Tidak Gepeng) */
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 4. Efek Seleksi Teks (Saat User Memblok Tulisan) */
+::selection {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+/* 5. Optimasi Efek Blur Navigasi di Beberapa Browser */
+.backdrop-blur-md {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
